@@ -1,0 +1,71 @@
+/* LandingPage.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.header {
+  margin: 0 0 20px 0;
+  font-size: 1.8rem; /* Smaller font size by default, suitable for mobile */
+  color: #333;
+}
+
+.subtext {
+  font-size: 1rem; /* Suitable for mobile */
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  font-size: 0.9rem; /* Smaller button on mobile */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .header {
+    font-size: 2.5rem; /* Larger font size for tablets and up */
+  }
+
+  .subtext {
+    font-size: 1.25rem; /* Adjust text size for readability */
+  }
+
+  .ctaButton {
+    font-size: 1rem; /* Adjust button size for larger devices */
+    padding: 15px 30px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .header {
+    font-size: 3rem; /* Even larger font size for desktops */
+  }
+
+  .subtext {
+    font-size: 1.5rem; /* Increase readability on larger screens */
+  }
+
+  .ctaButton {
+    font-size: 1.2rem; /* Larger button for desktops */
+    padding: 20px 40px;
+  }
+}

@@ -1,0 +1,13 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff; /* Or any color that matches your design */
+  z-index: 1000; /* Ensures the nav is above other content */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a slight shadow for depth */
+}
+
+.container {
+  padding-top: 60px; /* Adjust based on the height of your nav to prevent content overlap */
+  /* Other styles remain the same */
+}
